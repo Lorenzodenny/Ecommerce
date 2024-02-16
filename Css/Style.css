@@ -1,0 +1,209 @@
+﻿body {
+    background-image: url('https://img.freepik.com/free-vector/neon-lights-background-theme_52683-44625.jpg?size=626&ext=jpg');
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+#form1 > div:nth-child(3) > h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0 5% ;
+}
+
+#form1 > div:nth-child(3) > h3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+        background-size: 200% auto;
+        z-index: -1;
+        border-radius: 10px;
+        animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#form1 > div:nth-child(3) > h3::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #000;
+    z-index: -2;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+#form1 > div:nth-child(3) > h3:hover::after {
+    animation: flicker 1s infinite;
+}
+
+
+.color {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color:hover {
+    background-color: darkviolet;
+}
+
+.color {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.color:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.color {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s infinite alternate;
+}
+
+.immagine,
+.immagine2{
+    width: 300px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 5px;
+}
+
+    .immagine:hover {
+        opacity: 0.8; 
+        transform: scale(1.1); 
+    }
+
+.immagine {
+    filter: grayscale(50%); 
+}
+
+.immagine {
+    transform: rotate(10deg); 
+}
+
+.immagine {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.carte {
+    background-color: #f8f9fa; 
+    border: 1px solid #dee2e6; 
+    border-radius: 5px; 
+    padding: 20px; 
+    transition: background-color 0.3s ease; 
+}
+
+    .carte:hover {
+        background-color: #dce3e8;
+    }
+
+#ContentPlaceHolder1_ttlProduct {
+    color: white;
+    font-weight: bold;
+}
+
+#ContentPlaceHolder1_txtDescription {
+    color: white;
+    font-weight: bold;
+}
+
+#ContentPlaceHolder1_txtPrice {
+    color: white;
+    font-weight: bold;
+}
+
+#ContentPlaceHolder1_btnAddCart {
+    color: black; 
+    background: white; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    border-radius: 5px;
+    border: 1px solid black; 
+}
+
+#ContentPlaceHolder1_btnAddCart:hover,
+#ContentPlaceHolder1_btnAddCart:focus {
+     background: gray; 
+     color: white; 
+}
+
+    
+#ContentPlaceHolder1_btnAddCart:active {
+        transform: translateY(1px);
+}
+
+#ContentPlaceHolder1_contentTot > h2{
+    color:white;
+    margin: auto;
+    width: 20% ;
+    text-align:center;
+}
+
+.whiteTest {
+    color: white;
+}
+
+.bottoneDelete{
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+
+#form1 > div:nth-child(3){
+    color:white;
+}

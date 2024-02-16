@@ -25,13 +25,13 @@ namespace Ecommerce
                 {
                     while(dataReader.Read())
                     {
-                        content += $@"<div class=""card col-6 col-sm-4 col-md-3"">
-                                         <img src=""{dataReader["Image"]}"" class=""card-img-top"" alt=""{dataReader["Nome"]}"">
+                        content += $@"<div class=""card col-6 col-sm-4 col-md-3 mx-3 carte"" >
+                                         <img src=""{dataReader["Image"]}"" class=""h-100 card-img-top img-fluid immagine""   alt=""{dataReader["Nome"]}"">
                                             <div class=""card-body"">
                                             <h5 class=""card-title"">{dataReader["Nome"]}</h5>
                                             <p class=""card-text"">{dataReader["Descrizione"]}</p>
                                             <p class=""card-text"">{dataReader["Prezzo"]}</p>
-                                            <a href=""Dettaglio.aspx?product={dataReader["ID"]}"" class=""btn btn-primary"">Dettagli</a>
+                                            <a href=""Dettaglio.aspx?product={dataReader["ID"]}"" class=""btn btn-primary color"">Dettagli</a>
                                             </div>
                                             </div>";
 
